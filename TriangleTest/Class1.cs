@@ -104,6 +104,7 @@ namespace TriangleTest
             int secondSide = 33;
             int thirdSide = 25;
 
+
             string expected = "Scalene triangle";
 
             //Act
