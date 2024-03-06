@@ -104,8 +104,58 @@ namespace TriangleTest
             int secondSide = 33;
             int thirdSide = 25;
 
-
             string expected = "Scalene triangle";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(actual, expected);
+        }
+
+        [Test]
+        public static void IsoscelesTriangle_Input25and25and12_OutputIsoscelesTriangle()
+        {
+            //Arrange
+            int firstSide = 25;
+            int secondSide = 25;
+            int thirdSide = 12;
+
+            string expected = "Isosceles triangle";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(actual, expected);
+        }
+
+        [Test]
+        public static void IsoscelesTriangle_Input18and29and29_OutputIsoscelesTriangle()
+        {
+            //Arrange
+            int firstSide = 18;
+            int secondSide = 29;
+            int thirdSide = 29;
+
+            string expected = "Isosceles triangle";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(actual, expected);
+        }
+
+        [Test]
+        public static void IsoscelesTriangle_Input45and33and45_OutputIsoscelesTriangle()
+        {
+            //Arrange
+            int firstSide = 45;
+            int secondSide = 33;
+            int thirdSide = 45;
+
+            string expected = "Isosceles triangle";
 
             //Act
             string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
