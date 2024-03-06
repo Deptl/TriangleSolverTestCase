@@ -214,5 +214,56 @@ namespace TriangleTest
             //Assert
             Assert.AreEqual(actual, expected);
         }
+
+        [Test]
+        public static void InvalidInput_Input5and7and15_OutputInvalidTriangle()
+        {
+            //Arrange
+            int firstSide = 5;
+            int secondSide = 7;
+            int thirdSide = 15;
+
+            string expected = "INVALID!!";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(actual, expected);
+        }
+
+        [Test]
+        public static void InvalidInput_Input14and18and35_OutputInvalidTriangle()
+        {
+            //Arrange
+            int firstSide = 14;
+            int secondSide = 18;
+            int thirdSide = 35;
+
+            string expected = "INVALID!!";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(actual, expected);
+        }
+
+        [Test]
+        public static void InvalidInput_Input22and33and56_OutputInvalidTriangle()
+        {
+            //Arrange
+            int firstSide = 22;
+            int secondSide = 33;
+            int thirdSide = 56;
+
+            string expected = "INVALID!!";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(actual, expected);
+        }
     }
 }
